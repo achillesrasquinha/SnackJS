@@ -1,0 +1,88 @@
+@import "custom";
+@import "variables";
+@import "functions";
+@import "animate";
+
+// base class
+.snack {
+    // position
+    position                                : fixed;
+    right                                   : 0;
+    left                                    : 0;
+    bottom                                  : 0;
+    z-index                                 : $snack-z-index;
+
+    // box-model
+    padding                                 : $snack-padding;
+
+    // typography
+    font-size                               : $snack-font-size;
+
+    // visual
+    background-color                        : $snack-background-color;
+    color                                   : $snack-color;
+    box-shadow                              : $snack-box-shadow;
+
+    cursor                                  : pointer;
+}
+
+.snack-body {
+    // position
+    margin                                  : 0 auto;
+    max-width                               : $snack-body-max-width;
+    width                                   : $snack-body-width;
+
+    // box-model
+    box-sizing                              : border-box;
+
+    // typography
+    font-family                             : $snack-body-font-family;
+    font-size                               : $snack-body-font-size;
+    line-height                             : $snack-body-line-height;
+}
+
+.snack-col {
+    // position
+    float                                   : left;
+    width                                   : $snack-body-width;
+
+    // box-model
+    box-sizing                              : border-box;
+}
+
+.snack-col.snack-msg {
+    // position
+    width                                   : get-width(09);
+}
+
+.snack-msg {
+    // typography
+    text-align                              : justify;
+}
+
+.snack-col.snack-act {
+    // position
+    width                                   : get-width(03);
+
+    // typography
+    text-align                              : right;
+}
+
+.snack-acttxt {
+    // position
+    display                                 : inline-block;
+
+    // typography    
+    font-weight                             : $font-weight-semi-bold;
+    text-transform                          : uppercase;
+
+    // mis
+    cursor                                  : pointer;
+}
+
+@media (min-width: $screen-xs-max-width) {
+    .snack {
+        // box-model
+        padding                                 : $snack-padding-y $snack-padding-x;
+    }
+}

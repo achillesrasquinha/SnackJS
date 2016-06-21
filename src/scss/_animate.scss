@@ -1,0 +1,33 @@
+@keyframes show {
+    from {
+        transform : translate3d(0, 100%, 0);
+    }
+
+    to {
+        transform : translate3d(0, 0, 0);
+    }
+}
+
+@keyframes hide {
+    from {
+        transform : translate3d(0, 0, 0);
+    }
+
+    to {
+        transform : translate3d(0, 100%, 0);
+    }
+}
+
+.snack-show ,
+.snack-hide {
+    animation-duration                      : $snack-animation-duration;
+    animation-fill-mode                     : both;
+}
+
+.snack-show {
+    animation-name                          : show;
+}
+
+.snack-hide {
+    animation-name                          : hide;
+}

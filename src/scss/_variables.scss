@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+// breakpoints
+$screen-xs-max-width                    : 400px;
+
+// globals
+$column-count                           : 12;
+
+$font-weight-semi-bold                  : 700;
+
+// position
+$snack-body-max-width                   : 960px;
+$snack-body-width                       : 100%;
+$snack-body-width-xs                    :  85%;
+$snack-z-index                          : 999999;
+
+// typography
+$snack-font-size                        : 62.5%;
+$snack-body-font-family                 : "Roboto";
+$snack-body-font-size                   : 1.4rem;
+$snack-body-line-height                 : 1.5;
+
+
+// visual
+$snack-background-color                 : #323232;
+$snack-color                            : #FFFFFF;
+$snack-box-shadow                       : 0 0 10px 0 rgba(0,0,0,.5);
+
+// box-model
+$snack-padding                          : 1.4rem;
+$snack-padding-x                        : $snack-padding * 2;
+$snack-padding-y                        : $snack-padding;
+
+// mis
+$snack-animation-duration               : .3s;

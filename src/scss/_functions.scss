@@ -1,0 +1,3 @@
+@function get-width($i) {
+    @return ($snack-body-width / $column-count) * $i;
+}

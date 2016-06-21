@@ -1,0 +1,27 @@
+{
+  "name": "snackjs",
+  "description": "Android Snackbars done right for the web.",
+  "main": "dist/js/snack.js",
+  "authors": [
+    "Achilles Rasquinha"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "notification",
+    "lightweight",
+    "material",
+    "design",
+    "snackbar",
+    "snackjs",
+    "snack",
+    "message",
+    "action"
+  ],
+  "homepage": "https://achillesrasquinha.github.io/SnackJS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "docs/_site"
+  ]
+}

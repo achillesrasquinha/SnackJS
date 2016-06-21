@@ -1,0 +1,38 @@
+{
+  "name": "snackjs",
+  "version": "1.0.8",
+  "description": "Android Snackbars done right for the web.",
+  "main": "dist/js/snack.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achillesrasquinha/SnackJS.git"
+  },
+  "keywords": [
+    "javascript",
+    "notification",
+    "lightweight",
+    "material",
+    "design",
+    "snackbar",
+    "snackjs",
+    "snack",
+    "message",
+    "action"
+  ],
+  "author": "Achilles Rasquinha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/achillesrasquinha/SnackJS/issues"
+  },
+  "homepage": "https://achillesrasquinha.github.io/SnackJS",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-typescript": "^2.13.6",
+    "gulp-uglify": "^1.5.3"
+  },
+  "dependencies": {}
+}

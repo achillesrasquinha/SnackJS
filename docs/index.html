@@ -1,0 +1,156 @@
+---
+layout: default
+---
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1 class="font-bold">SnackJS</h1>
+    <h5>Android Snackbars done right.</h5>
+    <a aria-label="Star achillesrasquinha/SnackJS on GitHub" data-count-aria-label="# stargazers on GitHub" data-count-api="/repos/achillesrasquinha/SnackJS#stargazers_count" data-count-href="/achillesrasquinha/SnackJS/stargazers" data-style="mega" data-icon="octicon-star" href="https://github.com/achillesrasquinha/SnackJS" class="github-button">Star</a>
+    <a aria-label="Fork achillesrasquinha/SnackJS on GitHub" data-count-aria-label="# forks on GitHub" data-count-api="/repos/achillesrasquinha/SnackJS#forks_count" data-count-href="/achillesrasquinha/SnackJS/network" data-style="mega" data-icon="octicon-repo-forked" href="https://github.com/achillesrasquinha/SnackJS/fork" class="github-button">Fork</a>
+  </div>
+</div>
+<div class="container">
+  <p class="text-justify">
+    Inspired by Android's very own Snackbar widget, SnackJS is an attempt to provide a minimal feedback notification in case of a web operation through a concise message and/or a single action response displayed at the bottom of the screen. For more information visit <a href="https://material.google.com/components/snackbars-toasts.html">Google's Material Design - Snackbar &amp; Toasts.</a>
+  </p>
+  <div class="text-center">
+    <h4 class="text-uppercase font-bold">Demo</h4>
+    <div class="btn btn-group">
+      <button id="btn-demo-1" class="btn btn-primary">Snack 1</button>
+      <button id="btn-demo-2" class="btn btn-info"   >Snack 2</button>
+    </div>
+  </div>
+  <div class="page-header no-border no-padding">
+    <h3 class="font-bold">Installation</h3>
+  </div>
+  <div class="panel panel-default no-border no-shadow">
+    <div class="panel-body">
+      <p class="font-bold">1. Clone the repository</p>
+{% highlight shell %}
+git clone https://github.com/achillesrasquinha/SnackJS.git
+{% endhighlight %}
+      <p class="font-bold">2. Install using npm</p>
+{% highlight shell %}
+npm install snackjs
+{% endhighlight %}
+      <p class="font-bold">3. Install using bower</p>
+{% highlight shell %}
+bower install snackjs
+{% endhighlight %}
+      <p>In your HTML file</p>
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+  <head>
+    ...
+    <link rel="stylesheet" href="/path/to/snackjs.css">
+  </head>
+  <body>
+    ...
+    <script src="/path/to/snack.js"></script>
+  </body>
+</html>
+{% endhighlight    %}
+    </div>
+  </div>
+
+  <!-- Usage -->
+  <div class="page-header no-border no-padding">
+    <h3 class="font-bold">Usage</h3>
+  </div>
+  <div class="panel panel-default no-border no-shadow">
+    <div class="panel-body">
+      <p>A template declaration would be as follows</p>
+{% highlight javascript %}
+var snack = Snack.make("<your_message>", { /*<your_options>*/ });
+snack.show();
+{% endhighlight %}
+      <p>For example,</p>
+{% highlight javascript %}
+// Message-Only Snack
+Snack.make("This is a Snack.").show();
+
+// Message + Action Snack
+Snack.make("This is a Snack with an action.", {
+  action  : 'Okay',
+  onAction: function ( ) {
+      alert("Success!");
+  }
+}).show();
+{% endhighlight %}
+      <p>Or maybe, a chain call</p>
+{% highlight javascript %}
+var snack = new Snack();
+snack.message ("Luke, I'm your father.")
+     .settings({ duration: Snack.LONG, hideOnClick: true })
+     .show();
+{% endhighlight %}
+    </div>
+  </div>
+
+  <!-- Methods -->
+  <div class="page-header no-border no-padding">
+    <h3 class="font-bold">Methods</h3>
+  </div>
+  <div class="panel panel-default no-border no-shadow">
+    <div class="panel-body">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Return</th>
+              <th>Method</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Snack</td>
+              <td><code>make(message, option)</code></td>
+              <td>Creates a snackbar with message and options provided.</td>
+            </tr>
+            <tr>
+              <td>Snack</td>
+              <td><code>settings(option)</code></td>
+              <td>Pass your options to <code>settings</code> to change them any time.</td>
+            </tr>
+            <tr>
+              <td>Snack</td>
+              <td><code>message(message)</code></td>
+              <td>Update the Snack's message.</td>
+            </tr>
+            <tr>
+              <td>void</td>
+              <td><code>show()</code></td>
+              <td>Display the Snack.</td>
+            </tr>
+            <tr>
+              <td>void</td>
+              <td><code>hide()</code></td>
+              <td>Hide the Snack.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Options -->
+  <div class="page-header no-border no-padding">
+    <h3 class="font-bold">Options</h3>
+  </div>
+  <div class="panel panel-default no-border no-shadow">
+    <div class="panel-body">
+{% highlight javascript %}
+var snack = new Snack();
+snack.settings({
+    duration   : Snack.SHORT /*default*/ | Snack.LONG | Snack.INDEFINITE | /*<your_duration_in_ms>*/,
+    action     : null        /*default*/ | "<your_action_string>",
+    actionColor: Snack.INFO  /*default*/ | Snack.SUCCESS | Snack.WARNING | Snack.DANGER | "<your_hex_string>",
+    onAction   : null        /*default*/ | /*<your_function_object>*/,
+    hideOnClick: true        /*default*/ | false 
+});
+{% endhighlight %}
+    </div>
+  </div>
+</div>
