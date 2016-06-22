@@ -1,6 +1,6 @@
 {
   "name": "snackjs",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "Android Snackbars done right for the web.",
   "main": "dist/js/snack.js",
   "repository": {
