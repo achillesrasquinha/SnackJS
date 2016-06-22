@@ -15,9 +15,6 @@
     // box-model
     padding                                 : $snack-padding;
 
-    // typography
-    font-size                               : $snack-font-size;
-
     // visual
     background-color                        : $snack-background-color;
     color                                   : $snack-color;
@@ -37,7 +34,7 @@
 
     // typography
     font-family                             : $snack-body-font-family;
-    font-size                               : $snack-body-font-size;
+    font-size                               : $snack-body-font-size-xs;
     line-height                             : $snack-body-line-height;
 }
 
@@ -84,5 +81,10 @@
     .snack {
         // box-model
         padding                                 : $snack-padding-y $snack-padding-x;
+    }
+
+    .snack-body {
+        // typography
+        font-size                               : $snack-body-font-size;
     }
 }

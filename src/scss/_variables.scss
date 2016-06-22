@@ -15,10 +15,10 @@ $snack-body-width-xs                    :  85%;
 $snack-z-index                          : 999999;
 
 // typography
-$snack-font-size                        : 62.5%;
 $snack-body-font-family                 : "Roboto";
-$snack-body-font-size                   : 1.4rem;
-$snack-body-line-height                 : 1.5;
+$snack-body-font-size                   : 16px;
+$snack-body-font-size-xs                : 14px;
+$snack-body-line-height                 : 1.4;
 
 
 // visual
@@ -27,7 +27,7 @@ $snack-color                            : #FFFFFF;
 $snack-box-shadow                       : 0 0 10px 0 rgba(0,0,0,.5);
 
 // box-model
-$snack-padding                          : 1.4rem;
+$snack-padding                          : 15px;
 $snack-padding-x                        : $snack-padding * 2;
 $snack-padding-y                        : $snack-padding;
 

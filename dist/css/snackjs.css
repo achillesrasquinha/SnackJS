@@ -43,15 +43,13 @@
 
 .snack
 {
-    font-size: 62.5%;
-
     position: fixed;
     z-index: 999999;
     right: 0;
     bottom: 0;
     left: 0;
 
-    padding: 1.4rem;
+    padding: 15px;
 
     cursor: pointer; 
 
@@ -63,8 +61,8 @@
 .snack-body
 {
     font-family: 'Roboto';
-    font-size: 1.4rem;
-    line-height: 1.5; 
+    font-size: 14px;
+    line-height: 1.4; 
 
     box-sizing: border-box;
     width: 100%;
@@ -111,6 +109,10 @@
 {
     .snack
     {
-        padding: 1.4rem 2.8rem;
+        padding: 15px 30px;
+    }
+    .snack-body
+    {
+        font-size: 16px;
     }
 }
