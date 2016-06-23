@@ -1,2 +1,4 @@
-title  : SnackJS
-baseurl: /SnackJS
+title      : SnackJS
+description: SnackJS, a lightweight javascript Android Snackbar plugin. SnackJS is an attempt to provide a minimal feedback notification in case of a web operation through a concise message and/or a single action response displayed at the bottom of the screen.
+keywords   : [javascript, plugin, notification, android, snackbar, snackjs, message, action, material, design]
+baseurl    : /SnackJS
